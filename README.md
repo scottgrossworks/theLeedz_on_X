@@ -2,7 +2,7 @@
 ## See the results: https://x.com/LeedzLyfe
 ## Google Gemini powered marketing agent that posts daily to @leedzlyfe on X
 
-##################################### architecture
+############################ architecture
   
 This bot is composed of a controller and three modules:
 
@@ -37,9 +37,7 @@ theLeedz_on_X.py -- controller
                           WAIT_SEC = handler will wait random number of seconds between 1-->WAIT_SEC before posting
 
 
-###########################################################
-trends_handler
-###########################################################
+############################ trends_handler
 
 The current trends API returns 50+ trends in a large JSON data structure that also provides context cues and other metadata.  This handler strips out the essential info and distills everything into a numbered list of trending topics.
 The length of the list is NUM_TRENDS.
@@ -57,7 +55,7 @@ uses http.client.HTTPSConnection to connect to API
 
 
 
-##################################### gemini_handler
+############################ gemini_handler
 
 1. Sign up for a Google Gemini account
 2. https://aistudio.google.com/app/prompts/new_chat
@@ -88,7 +86,7 @@ Here is the prompt I used:
 
 
 
-##################################### async_x_handler
+############################ async_x_handler
 
   1. Build using Docker / AWS CLI
   2. Upload as a separate lambda function and called using lambda.invoke( 'Event' )
@@ -108,7 +106,7 @@ Here is the prompt I used:
 
 
 
-##################################### Contact
+############################ Contact
 
 See the results: https://x.com/LeedzLyfe
 PLEASE branch this code and make it work for you.  
