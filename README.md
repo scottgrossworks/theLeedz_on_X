@@ -2,9 +2,7 @@
 ## See the results: https://x.com/LeedzLyfe
 ## Google Gemini powered marketing agent that posts daily to @leedzlyfe on X
 
-###########################################################
-architecture
-###########################################################
+##################################### architecture
   
 This bot is composed of a controller and three modules:
 
@@ -59,9 +57,7 @@ uses http.client.HTTPSConnection to connect to API
 
 
 
-###########################################################
-gemini_handler
-###########################################################
+##################################### gemini_handler
 
 1. Sign up for a Google Gemini account
 2. https://aistudio.google.com/app/prompts/new_chat
@@ -92,15 +88,14 @@ Here is the prompt I used:
 
 
 
-###########################################################
-async_x_handler
-###########################################################
+##################################### async_x_handler
 
   1. Build using Docker / AWS CLI
   2. Upload as a separate lambda function and called using lambda.invoke( 'Event' )
   3. See my paper on Asyncrhonous Messaging Design Pattern with Controllers : http://scottgross.works/papers/async
 
-
+  DO NOT USE A CAPITAL LETTER -- X or otherwise -- in the filename
+  
   The Docker build process is difficult.  These are the commands I use on Windows, in Powershell, to build an deploy this and other Lambdas to AWS in region us-west-2:
   1. Start Docker Dekstop
   
@@ -112,9 +107,8 @@ async_x_handler
 
 
 
-###########################################################
-Contact
-###########################################################    
+
+##################################### Contact
 
 See the results: https://x.com/LeedzLyfe
 PLEASE branch this code and make it work for you.  
